@@ -760,7 +760,7 @@ body {
   background-color: transparent;
 }
 .modal-input::placeholder,
-.modal-user-text::placeholder {
+.user-text::placeholder {
   color: rgba(117, 117, 117, 0.5);
 }
 .modal-input:focus,
