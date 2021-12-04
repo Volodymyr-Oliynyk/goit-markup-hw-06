@@ -456,32 +456,57 @@
         <button class="modal-button" data-modal-close>
           <img src="./img/close-black.svg" alt="X" />
         </button>
+
         <p class="modal-title">Оставьте свои данные, мы вам перезвоним</p>
+
         <form action="#" class="modal-form">
-          <input
-            type="text"
-            name="user-name"
-            placeholder="Иванов Иван Иванич"
-            title="Иванов Иван Иванич *"
-            class="modal-input"
-            required
-          />
-          <input
-            type="text"
-            name="user-tel"
-            placeholder="+38 096 111 11 11 *"
-            title="+38 096 111 11 11"
-            class="modal-input"
-            required
-          />
-          <input
-            type="email"
-            name="user-mail"
-            placeholder="info@devstudio.com"
-            title="info@devstudio.com"
-            class="modal-input"
-          />
-          <button type="submit">Отправить</button>
+          <div class="modal-form-text">
+            <label class="modal-input-text"
+              >Имя
+              <input
+                type="text"
+                name="user-name"
+                placeholder="Иванов Иван Иванович *"
+                title="Иванов Иван Иванович"
+                class="modal-input"
+                required
+              />
+            </label>
+
+            <label class="modal-input-tel"
+              >Телефон
+              <input
+                type="text"
+                name="user-tel"
+                placeholder="+38 096 111 11 11 *"
+                title="+38 096 111 11 11"
+                class="modal-input"
+                required
+              />
+            </label>
+
+            <label class="modal-input-mail"
+              >Почта
+              <input
+                type="email"
+                name="user-mail"
+                placeholder="info@devstudio.com"
+                title="info@devstudio.com"
+                class="modal-input"
+              />
+            </label>
+
+            <label class="modal-user-text"
+              ><span class="coment-title">Комментарий</span>
+              <textarea
+                name="user-text"
+                placeholder="Введите текст"
+                title="Введите текст"
+                class="user-text"
+              />
+            </label>
+          </div>
+          <button type="submit" class="button-submit button">Отправить</button>
         </form>
       </div>
     </div>
