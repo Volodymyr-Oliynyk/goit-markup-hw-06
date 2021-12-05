@@ -337,6 +337,7 @@
         </ul>
       </div>
     </section>
+
   </main>
 
   <footer class="footer">
@@ -391,6 +392,20 @@
           </li>
         </ul>
       </div>
+
+      <div class="footer-form">
+        <p class="footer-form-text">Подпишитесь на рассылку</p>
+        <form action="#">
+          <input type="email" name="footer-user-mail" placeholder="E-mail" class="footer-user-mail">
+
+          <button type="submit" class="footer-form-button button">
+            Подписаться
+            <svg class="footer-icon-send" width="24" height="24">
+              <use href="/img/icons.svg#icon-telegram"></use>
+            </svg>
+          </button>
+        </form>
+      </div>
     </div>
   </footer>
   <!-- Modal window -->
@@ -420,7 +435,7 @@
         <div class="modal-input-box">
           <label class="modal-input-tel">Телефон
             <div class="modal-input-wrap">
-              <input type="text" name="user-tel" class="modal-input" required/>
+              <input type="text" name="user-tel" class="modal-input" required />
               <svg class="user-name-icon" width="18" height="18">
                 <use href="/img/icons.svg#modal-phone"></use>
               </svg>
@@ -441,14 +456,25 @@
 
         <div class="modal-input-box">
           <label class="modal-user-text">
-            <span class="coment-title">Комментарий</span>
+            <p class="coment-title">Комментарий</p>
             <textarea name="user-coment" placeholder="Введите текст" title="Введите текст" class="user-text"></textarea>
           </label>
         </div>
+
+        <div class="modal-checkbox">
+          <input type="checkbox" name="policy" id="modal-check" class="modal-check is-hidden" />
+          <label for="modal-check" class="modal-check-text">
+            <span>
+              <svg class="modal-icon-check" width="16" height="15">
+                <use href="./img/icons.svg#modal-vector"></use>
+              </svg>
+            </span>
+            Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a>
+          </label>
+        </div>
+        <button type="submit" class="button-submit button">Отправить</button>
+      </form>
     </div>
-    <button type="submit" class="button-submit button">Отправить</button>
-    </form>
-  </div>
   </div>
   <script src="./js/modal.js"></script>
 </body>
