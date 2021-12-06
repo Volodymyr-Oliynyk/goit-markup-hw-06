@@ -739,12 +739,6 @@ body {
   background-color: transparent;
 }
 
-.modal-icon-button {
-  /* position: absolute;
-  top: 50%;
-  right: 50%; */
-  /* transform: translate(-50%, -50%); */
-}
 .modal-icon-button:hover,
 .modal-icon-button:focus {
   fill: var(--accent-color);
@@ -762,20 +756,21 @@ body {
   color: var(--primary-color);
 }
 
-.modal-form-text {
+.input-field {
+  margin-bottom: 10px;
+}
+
+.label-text {
+  display: block;
   font-size: 12px;
   line-height: 1.16;
 
   letter-spacing: 0.01em;
-
+  margin-bottom: 4px;
   color: var(--primary-shade-color);
 }
 
-.modal-input-box {
-  margin-bottom: 10px;
-}
-
-.modal-input-wrap {
+.input-grup-absolute {
   position: relative;
 }
 
@@ -783,7 +778,6 @@ body {
 .user-text {
   width: 100%;
   height: 40px;
-  margin-top: 4px;
 
   padding: 11px 42px;
   border: 1px solid rgba(33, 33, 33, 0.2);
